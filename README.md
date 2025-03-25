@@ -17,14 +17,14 @@ sudo pip3 install dataclasses jinja2 mako meson ply pyyaml
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r20
-curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/radiosound-com/android_local_manifest/android-15.0/manifest_brcm_rpi.xml --create-dirs
 ```
 
 Or optionally, you can reduce download size by creating a shallow clone and removing unneeded projects:
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r20 --depth=1
-curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/radiosound-com/android_local_manifest/android-15.0/manifest_brcm_rpi.xml --create-dirs
 curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0/remove_projects.xml
 ```
 
@@ -76,7 +76,7 @@ make bootimage systemimage vendorimage -j$(nproc)
 ./rpi5-mkimg.sh
 ```
 
-Also look into [Linux kernel build instructions](https://github.com/raspberry-vanilla/android_kernel_manifest/tree/android-15.0).
+Also look into [Linux kernel build instructions](https://github.com/radiosound-com/android_kernel_manifest/tree/android-15.0).
 
 ***
 
