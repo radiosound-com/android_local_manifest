@@ -46,6 +46,9 @@
   <project path="external/ffmpeg_codec2" name="raspberry-vanilla/android_external_ffmpeg_codec2" remote="github" revision="android-15.0" />
   <project path="external/libudev-zero" name="raspberry-vanilla/android_external_libudev-zero" remote="github" revision="android-15.0" />
 
+  <!-- GPS -->
+  <project path="hardware/gps" name="lineage-rpi/android_hardware_gps" remote="github" revision="lineage-22" />
+
   <!-- Graphics -->
   <remove-project name="platform/external/drm_hwcomposer" />
   <remove-project name="platform/external/mesa3d" />
