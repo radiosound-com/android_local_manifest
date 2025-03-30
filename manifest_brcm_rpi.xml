@@ -55,6 +55,9 @@
   <project path="external/mesa3d" name="raspberry-vanilla/android_external_mesa3d" remote="github" revision="android-15.0" />
   <project path="external/minigbm" name="raspberry-vanilla/android_external_minigbm" remote="github" revision="android-15.0" />
 
+  <!-- I2C tools -->
+  <project path="external/i2c-tools-for-android" name="Jubian540/i2c-tools-for-android" remote="github" revision="main" />
+
   <!-- v4l2_codec2 -->
   <remove-project name="platform/external/v4l2_codec2" />
   <project path="external/v4l2_codec2" name="raspberry-vanilla/android_external_v4l2_codec2" remote="github" revision="android-15.0" />
